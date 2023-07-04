@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+}
+body > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 20px;
+  }
+  
+  .field {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    max-width: 380px;
+    height:60%;
+    margin-top: 100px;
+  }
+  
+  button {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 10px;
+    min-height: 10px;
+  }
+  
+
+.count_1{
+    color:blue;
+}
+.count_2{
+    color: green;
+}
+.count_3{
+    color: red;
+}
+.count_4{
+    color: darkblue;
+}
+.count_5{
+    color:saddlebrown;
+}
+.count_6{
+    color:cyan;
+}
+.count_7{
+    color: black;
+}
+.count_8{
+    color:yellow;
+}
+.count_9{
+    color:darkred;
+}
+span{
+    font-size: 24px;
+}
+div>div>span{
+    display: block;
+}

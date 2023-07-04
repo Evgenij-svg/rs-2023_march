@@ -1,0 +1,792 @@
+@charset "UTF-8";
+/* PopUp*/
+.PopUP {
+  z-index: 3;
+  display: none;
+  position: fixed;
+  background: #fafafa;
+  border-radius: 9px;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: 500px;
+  width: 900px;
+  bottom: 0;
+}
+.PopUP .cross {
+  cursor: pointer;
+  position: absolute;
+  top: -50px;
+  right: -39px;
+  border: 2px solid #f1cdb3;
+  border-radius: 70px;
+  width: 48px;
+  height: 48px;
+}
+.PopUP .cross img {
+  position: relative;
+  top: 14px;
+  left: 18px;
+}
+.PopUP .imgPets {
+  width: 500px;
+  height: 500px;
+}
+.PopUP div {
+  margin-left: -4px;
+}
+.PopUP div .TitlePets {
+  margin-left: 33px;
+  margin-top: 52px;
+  margin-bottom: 0;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  /* or 45px */
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+.PopUP div .TypeBreed {
+  height: 23px;
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 0;
+  margin-left: 32px;
+  /* h4 */
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* identical to box height, or 23px */
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+.PopUP div .description {
+  width: 350px;
+  height: 102px;
+  margin-top: 43px;
+  margin-left: 33px;
+  /* h5 */
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  /* or 17px */
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin-right: 20px;
+}
+.PopUP div ul {
+  margin-left: 8px;
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.PopUP div ul li {
+  color: #f1cdb3;
+}
+.PopUP div ul li div {
+  display: flex;
+}
+.PopUP div ul li h3 {
+  color: black;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.PopUP div ul li h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  /* or 17px */
+  letter-spacing: 0.06em;
+  color: #000000;
+  align-self: center;
+}
+
+@media (max-width: 1000px) {
+  .PopUP {
+    height: 350px;
+    width: 630px;
+  }
+  .PopUP .cross {
+    right: -44px;
+  }
+  .PopUP .imgPets {
+    width: 350px;
+    height: 350px;
+  }
+  .PopUP div .TitlePets {
+    margin-left: 17px;
+    margin-top: 12px;
+  }
+  .PopUP div .TypeBreed {
+    margin-top: 8px;
+    margin-bottom: 0;
+    margin-left: 16px;
+  }
+  .PopUP div .description {
+    margin-top: 21px;
+    margin-left: 18px;
+    width: 260px;
+    font-size: 13px;
+  }
+  .PopUP div ul {
+    margin-left: -8px;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+@media (max-width: 730px) {
+  .PopUP {
+    height: 341px;
+    width: 245px;
+  }
+  .PopUP .cross {
+    right: -25px;
+  }
+  .PopUP .imgPets {
+    display: none;
+  }
+  .PopUP div .TitlePets {
+    margin-left: 53px;
+    margin-top: 9px;
+  }
+  .PopUP div .TypeBreed {
+    margin-top: 9px;
+    margin-bottom: 0;
+    margin-left: 48px;
+  }
+  .PopUP div .description {
+    margin-top: 21px;
+    margin-left: 14px;
+    width: 221px;
+  }
+  .PopUP div ul {
+    margin-left: -8px;
+    margin-top: 29px;
+  }
+}
+/* Base layot sccs */
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  margin-top: 7px;
+  position: relative;
+}
+
+@media (max-width: 1260px) {
+  /* … */
+  body {
+    margin: 0;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* Header */
+header {
+  width: 1280px;
+  height: 120px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.AppTitle {
+  margin-left: 40px;
+  margin-top: 22px;
+}
+.AppTitle h1 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  /* or 35px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  /* color-dark-l */
+  margin-top: 0;
+  margin-bottom: -2px;
+}
+.AppTitle h1 a {
+  color: #545454;
+}
+.AppTitle p {
+  /* logo_subtitle */
+  margin-left: 5px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  /* color-dark-3xl */
+  color: #292929;
+}
+
+.displayblock320px {
+  display: none;
+}
+
+nav {
+  margin-right: 41px;
+  display: flex;
+  margin-top: -18px;
+  gap: 35px;
+  align-self: center;
+}
+nav a {
+  /* paragraph-l */
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  /* identical to box height, or 24px */
+  /* color-dark-l */
+  color: #545454;
+  text-decoration: none;
+}
+nav .CheckedLink {
+  border-bottom: 3px solid #f1cdb3;
+  cursor: default;
+}
+
+@media (max-width: 1279px) {
+  /* … */
+  header {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 800px) {
+  /* … */
+  nav {
+    margin-right: 28px;
+    margin-top: 0;
+    gap: 37px;
+  }
+  .AppTitle {
+    margin-top: 30px;
+    margin-left: 29px;
+  }
+}
+.Menu {
+  display: none;
+}
+
+.blackout {
+  overflow-x: hidden;
+}
+
+.blackout::before {
+  /* Стили для псевдоэлемента */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Цвет и прозрачность затемнения */
+  pointer-events: none; /* Блокировка событий на элементе, чтобы содержимое не было доступно для взаимодействия */
+  z-index: 1; /* Устанавливаем z-index на более низкий уровень, чтобы псевдоэлемент был под содержимым заголовка */
+}
+
+.black::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+  /* … */
+  .Menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 320px;
+    height: 100vh;
+    top: 0px;
+    justify-content: center;
+    align-items: center;
+    right: -320px; /* Начальное положение справа за пределами экрана */
+    transition: right 0.3s ease-in-out;
+    z-index: 2;
+    /* color-dark-3xl */
+    background: #292929;
+  }
+  .Menu a {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 160%;
+    /* or 51px */
+    /* color-light-s */
+    color: #fafafa;
+  }
+  .Menu .CheckedLink {
+    border-bottom: 3px solid #f1cdb3;
+  }
+  nav {
+    display: none;
+  }
+  .BurgerButton {
+    display: block;
+    width: 30px;
+    height: 22px;
+    align-self: center;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    transition: 0.5s;
+    position: relative;
+    z-index: 2;
+  }
+  .BurgerButton div {
+    width: 30px;
+    height: 0px;
+    border: 2px solid #f1cdb3;
+  }
+  .AppTitle {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+}
+/*Main*/
+main {
+  background: #f6f6f6;
+  width: 1280px;
+  height: 1333px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h2 {
+  margin-top: 73px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  /* or 35px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #545454;
+}
+
+.cards {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  grid-gap: 30px 40px;
+}
+
+.card {
+  width: 270px;
+  height: 435px;
+  background: #fafafa;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  border-radius: 9px 9px 0px 0px;
+}
+.card h4 {
+  margin: auto;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  /* or 35px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #545454;
+  margin-top: 26px;
+}
+.card button {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 40px;
+  gap: 10px;
+  width: 187px;
+  height: 52px;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  background-color: #fafafa;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 0px;
+}
+.card button span {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  /* or 35px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #292929;
+}
+
+.PagStatExamp {
+  display: flex;
+  gap: 20px;
+  margin-top: 60px;
+}
+.PagStatExamp button {
+  width: 50px;
+  height: 50px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* or 35px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  background: none;
+  border-radius: 52px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid;
+}
+.PagStatExamp .prevPrev {
+  color: #cdcdcd;
+}
+.PagStatExamp .prev {
+  color: #cdcdcd;
+}
+.PagStatExamp .page {
+  background: #f1cdb3;
+  border: none;
+}
+.PagStatExamp .next {
+  border: 2px solid #f1cdb3;
+}
+.PagStatExamp .nextNext {
+  border: 2px solid #f1cdb3;
+}
+
+@media (max-width: 1279px) {
+  /* … */
+  main {
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+  .PagStatExamp {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 1279px) {
+  /* … */
+  .cards {
+    grid-template-columns: repeat(3, 270px);
+  }
+}
+@media (max-width: 1000px) {
+  /* … */
+  .cards {
+    grid-template-columns: repeat(2, 270px);
+  }
+  .displayNone768px {
+    display: none;
+  }
+}
+@media (max-width: 770px) {
+  /* … */
+  main {
+    width: 100vw;
+    margin: auto;
+    margin-top: -2px;
+  }
+  main h2 {
+    margin-top: 83px;
+    margin-bottom: 0px;
+  }
+  .PagStatExamp {
+    margin-top: 38px;
+    margin-bottom: 77px;
+  }
+}
+@media (max-width: 600px) {
+  /* … */
+  .cards {
+    grid-template-columns: repeat(1, 270px);
+  }
+  .displayNone320px {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  main h2 {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    /* or 35px */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+  }
+}
+@media (max-width: 350px) {
+  main h2 {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    /* or 35px */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    margin-top: 44px;
+    margin-bottom: 10px;
+  }
+  .PagStatExamp {
+    margin-top: 43px;
+    margin-bottom: 44px;
+    gap: 12px;
+  }
+  .card h4 {
+    margin-top: 30px;
+  }
+}
+/* Footer */
+footer {
+  margin: auto;
+  background: url("../../img/noise_transparent@2x.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
+  width: 1280px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+}
+footer .puppy {
+  width: 300px;
+  height: 310px;
+  align-self: end;
+}
+
+.Feedback {
+  margin-top: 20px;
+}
+.Feedback h3 {
+  width: 280px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  /* or 35px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin-bottom: -5px;
+}
+.Feedback div {
+  display: flex;
+  gap: 20px;
+  margin-top: 42px;
+}
+.Feedback div img {
+  width: 40px;
+  height: 32px;
+}
+.Feedback div span {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* or 35px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #f1cdb3;
+}
+
+.Location {
+  width: 300px;
+  margin-top: 22px;
+}
+.Location h3 {
+  width: 270px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  /* or 35px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.Location div {
+  margin-top: 28px;
+  display: flex;
+  gap: 20px;
+}
+.Location div img {
+  width: 22px;
+  height: 32px;
+}
+.Location div span {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* or 35px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #f1cdb3;
+}
+
+button:hover {
+  background: #fddcc4;
+}
+
+.PagStatExamp button:hover {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  /* or 35px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  background: none;
+}
+
+@media (max-width: 1279px) {
+  footer {
+    width: 100%;
+    gap: 100px;
+  }
+}
+@media (max-width: 1140px) {
+  footer {
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+@media (max-width: 770px) {
+  footer {
+    gap: 64px 61px;
+    width: 100vw;
+    margin: auto;
+  }
+  .puppy {
+    margin-left: -3px;
+  }
+  .Feedback {
+    margin-top: -2px;
+    margin-left: 1px;
+  }
+  .Location {
+    margin-top: -3px;
+  }
+}
+@media (max-width: 500px) {
+  .Feedback {
+    margin-top: 6px;
+  }
+  .Feedback h3 {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    /* or 35px */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+  .Feedback div {
+    display: flex;
+    gap: 22px;
+    margin-top: 43px;
+    margin-left: 16px;
+  }
+  .Location {
+    margin-top: -12px;
+  }
+  .Location h3 {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    /* or 35px */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin: auto;
+  }
+  .Location div {
+    margin-top: 38px;
+  }
+  footer {
+    gap: 49px 61px;
+  }
+  footer .puppy {
+    width: 260px;
+    height: 269px;
+    margin-top: -6px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
