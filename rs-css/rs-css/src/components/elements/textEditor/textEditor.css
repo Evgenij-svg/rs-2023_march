@@ -1,0 +1,10 @@
+.textEditor{
+    width: 200px;
+}
+.textEditorInput{
+    border: none;
+    width: 98%;
+}
+.textEditorInput:focus {
+    outline: none
+}

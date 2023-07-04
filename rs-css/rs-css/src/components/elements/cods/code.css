@@ -1,0 +1,18 @@
+.Code {
+    color: #c9c9c9;
+    background-color: #142a5fd3;
+    width: 300px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+
+.high {
+    color: white;
+
+}
+
+.tags {
+    font-size: 16px;
+    margin-left: 1em;
+}

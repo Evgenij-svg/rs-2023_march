@@ -1,0 +1,14 @@
+.SideBar{
+    padding-right: 2px;
+    padding-left: 2px;
+    border-right: 2px solid #c8c8c8;
+    background: #c8c8c8;
+    text-align: end;
+}
+
+.block2{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+}
